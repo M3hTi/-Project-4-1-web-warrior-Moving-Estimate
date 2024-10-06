@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hands-on Project 4-1: Moving Estimate</title>
+</head>
+<body>
+    <h1>Hands-on Project 4-1</h1>
+    <form id="form">
+        <h2>Moving Estimate</h2>
+        <label for="wgtBox">Estimated weight @ $0.50 per pound</label>
+        <input type="text" id="wgtBox"> lbs.<br>
+        
+        <label for="distBox">Estimated distance @ $0.75 per mile</label>
+        <input type="text" id="distBox"> miles<br>
+        
+        <label for="setupBox">Setup and Installation (add $500)</label>
+        <input type="checkbox" id="setupBox"><br>
+        
+        <label for="totalBox">Estimated Moving Cost</label>
+        <input type="text" id="totalBox" readonly>
+        <span id="msgBox"></span>
+    </form>
+    <script src="calculateMoving.js" defer></script>
+</body>
+</html>
